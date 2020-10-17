@@ -44,6 +44,7 @@ Return value:area in cm^2
 '''''''''''''''''''''''''''''''''''''''''''''''
 
 def depth_object(count,aligned_depth_frame,depth_frame):
+    # Converting the frames to numpy array for plotting using matplotlib
     color = np.asanyarray(color_frame.get_data())
     depth=np.asanyarray((depth_frame).get_data())
     aligned_depth=np.asanyarray(aligned_depth_frame.get_data())
